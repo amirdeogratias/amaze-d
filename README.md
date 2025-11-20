@@ -485,11 +485,6 @@ make fclean     # Supprime tout
 # Suite de tests
 ./run_tests.sh
 
-# Tests individuels
-./amaze-d < test_simple.txt
-./amaze-d -v < test.txt
-./amaze-d -va < test2.txt
-
 # Démonstration complète
 ./demo.sh
 ```
