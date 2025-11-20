@@ -1,0 +1,41 @@
+10
+# Complex maze with multiple paths
+##start
+entrance 0 5
+##end
+exit 20 5
+# Upper path
+room_u1 5 8
+room_u2 10 8
+room_u3 15 8
+# Middle path
+room_m1 5 5
+room_m2 10 5
+room_m3 15 5
+# Lower path
+room_l1 5 2
+room_l2 10 2
+room_l3 15 2
+# Connections - entrance to paths
+entrance-room_u1
+entrance-room_m1
+entrance-room_l1
+# Upper path connections
+room_u1-room_u2
+room_u2-room_u3
+room_u3-exit
+# Middle path connections
+room_m1-room_m2
+room_m2-room_m3
+room_m3-exit
+# Lower path connections
+room_l1-room_l2
+room_l2-room_l3
+room_l3-exit
+# Cross connections
+room_u1-room_m1
+room_m1-room_l1
+room_u2-room_m2
+room_m2-room_l2
+room_u3-room_m3
+room_m3-room_l3
